@@ -1,0 +1,284 @@
+*{
+    margin:0;
+    padding:0;
+    background-color:aliceblue;
+}
+
+.teacherDashboardCont{
+    width:100vw;
+    height:100vh;
+    border:2px solid red;
+    display: flex;
+
+}
+
+
+
+.teacherDashboardRightSide{
+   width:85%;
+   height:100%;
+   border:2px solid black;
+}
+
+.teacherDashboardNavCont{
+    width:100%;
+    height:10%;
+    /* border:2px solid black; */
+    display: flex;
+    justify-content: space-around;
+}
+
+.teacherNavSearchOuterCont{
+    width:70%;
+    height:100%;
+    /* border:2px solid blue; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.teacherSearchInnerCont{
+    width:60%;
+   border:1px solid rgba(128, 128, 128, 0.701);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border-radius: 10px;
+   gap:5px;
+   /* padding:10px; */
+ 
+   
+   
+}
+.teacherSearchInnerCont img{
+    width:30px;
+    height:30px;
+    /* border:2px solid yellow; */
+    /* border-right: 2px solid gray; */
+    
+}
+
+.teacherSearchInnerCont input{
+    width:90%;
+    height:100%;
+    border:none;
+    border-radius: 10px;
+    /* border:2px solid black; */
+    display: flex;
+    justify-content: center;
+    font-size: 1.3rem;
+    outline: none;
+    padding:8px;
+   
+   
+    
+   
+ 
+    
+}
+
+
+.teacherSearchInnerCont input::placeholder{
+    /* border:2px solid red; */
+    /* height:80%; */
+    width:20%;
+    font-size:1.3rem;
+    text-align:start;
+    margin:0;
+}
+
+.teacherNavProfileCont{
+    width:25%;
+    height:100%;
+    /* border:2px solid crimson; */
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap:10px;
+}
+
+.profileName{
+    /* border:2px solid blue; */
+    font-size:1.5rem;
+    
+}
+.profileIcon{
+    width:40px;
+    height:40px;
+}
+
+
+
+/* Sidebar */
+.teacherDashboardSidebar{
+    width:15%;
+    height:100%;
+    border:5px solid blue;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    gap:10px;
+    /* align-items: center; */
+}
+
+.teacherDashLogo{
+    /* border:1px solid black; */
+    width:90%;
+    height:10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid gray;
+}
+.teacherDashLogo img{
+    width:50px;
+    height:50px;
+    /* border:2px solid red; */
+}
+
+.teacherDashSideIcon{
+    /* border:5px solid orangered; */
+    width:90%;
+    height:15%;
+    border-bottom: 1px solid gray;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap:5px;
+    
+
+}
+
+
+.teacherDashSideIcon>span{
+    /* border:1px solid red; */
+    
+    font-size:1.2rem;
+    color:gray;
+}
+.sideDashInnerCont{
+    /* border:2px solid blue; */
+    width:100%;
+    height:50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* margin:0; */
+    cursor: pointer;
+    gap:30px;
+    /* background-color: rgba(65, 105, 225, 0.315); */
+    border-right: 4px solid rgba(0, 0, 255, 0.72);
+    
+   
+}
+
+.sideDashInnerCont:hover{
+    background-color: rgba(65, 105, 225, 0.315);
+    color:rgba(65, 105, 225, 0.998);
+}
+.sideDashInnerCont>span{
+  
+   font-size:1.2rem;
+   background-color: transparent;
+  
+   
+ 
+   
+}
+.sideDashInnerCont img{
+    width:25px;
+    height:25px;
+    /* border:1px solid red; */
+}
+
+.teacherDashInfo{
+    /* border:2px solid royalblue; */
+    width:90%;
+    height:80%;
+    
+}
+
+.teacherClassInfoTitle{
+    /* border:2px solid red; */
+    width:100%;
+    margin-bottom: 5%;
+    padding:5px;
+
+}
+.teacherClassInfoTitle span{
+    color:gray;
+    font-size:1.2rem;
+}
+
+.teacherClassInfoCont{
+    /* border:2px soild red; */
+    width:100%;
+    height:auto;
+}
+
+.classInfoInnerCont{
+    /* border:5px solid black; */
+    width:100%;
+    display: flex;
+    justify-content: flex-start;
+    gap:30px;
+    padding:10px;
+    cursor: pointer;
+    
+}
+
+.classInfoInnerCont:hover{
+    background-color: rgba(65, 105, 225, 0.315);
+    color:rgba(65, 105, 225, 0.998);
+}
+
+.classInfoInnerCont img{
+    width:30px;
+    height:30px;
+}
+.classInfoInnerCont span{
+    font-size:1.2rem;
+    background-color: transparent;
+  /* color:rgba(65, 105, 225, 0.907); */
+}
+
+
+
+/* about teacher container */
+
+.teacherDashAboutCont{
+    width:100%;
+    height:90%;
+    border:2px solid rebeccapurple;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+}
+
+.teacherAboutWelcomeCont{
+    width:100%;
+    height:10%;
+    border:1px solid gray;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+   
+}
+
+
+.teacherAboutWelcomeCont span{
+    font-size:1.5rem;
+    animation: scroll-left 30s infinite;
+}
+@keyframes scroll-left {
+    0%{
+        transform: translateX(50%);
+    }
+    100%{
+        transform: translateX(-50%);
+    }
+}

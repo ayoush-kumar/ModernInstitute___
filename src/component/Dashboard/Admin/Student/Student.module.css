@@ -1,0 +1,592 @@
+*{
+    margin: 0;
+    padding:0;
+    /* background-color: black; */
+}
+
+.studentOuterCont{
+    width:100%;
+    height:100%;
+    /* border:5px solid black; */
+    
+}
+
+.studentNavCont{
+    width:100%;
+    height:10%;
+    border:2px solid blue;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin:auto;
+}
+
+
+
+.studentDashNavLogo{
+    width:5%;
+    height:100%;
+    /* border:1px solid black; */
+}
+
+.studentNavTitle{
+    width:70%;
+    height:100%;
+    /* border:2px solid red; */
+    padding:10px;
+    font-size: 2rem;
+    color:rgba(65, 105, 225, 0.998);
+}
+.studentNavProfile{
+    width:12%;
+    height:10%;
+    /* border:2px solid brown; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+
+}
+.studentNavProfile img{
+    width:50px;
+    height:50px;
+    /* border:2px solid yellow; */
+}
+.studentNavProfile span{
+    font-size: 1.5rem;
+    /* border:2px solid yellow; */
+}
+
+.studentInfoCont{
+    width:100%;
+    height:85%;
+    border:1px solid red;
+    display: flex;
+
+}
+
+.studentlftSideInfoCont{
+    width:20%;
+    height:100%;
+    /* border:5px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.allDetails{
+    padding:10px;
+    border-bottom: 1px solid gray;
+    cursor: pointer;
+    list-style: none;
+}
+
+
+.allDetails li{
+    
+    /* border:2px solid blue; */
+    width:100%;
+    padding:3px;
+    color:black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+
+.allDetails li img{
+    
+    width:30px;
+    height:30px;
+    background-color: transparent;
+    /* display: none; */
+}
+.allDetails li:hover{
+    background-color: rgb(21 94 117);;
+    color:white;
+    
+    
+}
+
+
+.studentRightSideCont{
+    width:80%;
+    height:100%;
+    border:2px solid blue;
+}
+
+
+
+/* media query for mobile */
+
+@media  (max-width:600px) {
+    .studentNavCont{
+        width:100%;
+        height:10%;
+        border:2px solid red;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin:auto;
+    }
+
+    .studentDashNavLogo{
+        width:auto;
+        height:50%;
+        /* border:1px solid black; */
+        display: flex;
+        align-items: center;
+    }
+    
+    .studentDashNavLogo img{
+        width:40px;
+        height:40px;
+    }
+    .studentNavTitle{
+        width:auto;
+        height:100%;
+        /* border:2px solid red; */
+        padding:10px;
+        font-size: 1.1rem;
+        color:rgba(65, 105, 225, 0.998);
+    }
+    .studentNavProfile{
+        width:25%;
+        height:10%;
+        /* border:2px solid brown; */
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    
+    
+    }
+    .studentNavProfile img{
+        width:30px;
+        height:30px;
+        /* border:2px solid yellow; */
+    }
+    .studentNavProfile span{
+        font-size: 0.8rem;
+        /* border:2px solid yellow; */
+    }
+    
+    .studentInfoCont{
+        width:100%;
+        height:85vh;
+        /* border:1px solid red; */
+        display: flex;
+    
+    }
+    
+    .studentlftSideInfoCont{
+        width:50%;
+        height:auto;
+        /* border:5px solid red; */
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+ 
+    
+    .allDetails{
+        /* padding:10px; */
+        border-bottom: 1px solid gray;
+        cursor: pointer;
+        list-style: none;
+        width:auto;
+        /* padding:15px; */
+        margin:0;
+        padding:0;
+    }
+    
+    
+    .allDetails li{
+        
+        /* border:2px solid blue; */
+        width:auto;
+        /* padding:3px; */
+        padding:0;
+        margin:0;
+        color:black;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size:0.8rem;
+    
+    
+    }
+    
+    .allDetails li img{
+        
+        width:20px;
+        height:20px;
+        background-color: transparent;
+        /* display: none; */
+    }
+    .allDetails li:hover{
+        background-color: rgb(21 94 117);;
+        color:white;
+        
+        
+    }
+
+
+    
+}
+
+
+@media  (min-width:600px) {
+    .studentNavCont{
+        width:100%;
+        height:10%;
+        border:2px solid red;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin:auto;
+    }
+
+    .studentDashNavLogo{
+        width:auto;
+        height:50%;
+        /* border:1px solid black; */
+        display: flex;
+        align-items: center;
+    }
+    
+    .studentDashNavLogo img{
+        width:40px;
+        height:40px;
+    }
+    .studentNavTitle{
+        width:auto;
+        height:100%;
+        /* border:2px solid red; */
+        padding:10px;
+        font-size: 1.1rem;
+        color:rgba(65, 105, 225, 0.998);
+    }
+    .studentNavProfile{
+        width:17%;
+        height:10%;
+        /* border:2px solid brown; */
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    
+    
+    }
+    .studentNavProfile img{
+        width:30px;
+        height:30px;
+        /* border:2px solid yellow; */
+    }
+    .studentNavProfile span{
+        font-size: 0.8rem;
+        /* border:2px solid yellow; */
+    }
+    
+    .studentInfoCont{
+        width:100%;
+        height:85vh;
+        /* border:1px solid red; */
+        display: flex;
+    
+    }
+    
+    .studentlftSideInfoCont{
+        width:30%;
+        height:auto;
+        /* border:5px solid red; */
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+ 
+    
+    .allDetails{
+        /* padding:10px; */
+        border-bottom: 1px solid gray;
+        cursor: pointer;
+        list-style: none;
+        width:auto;
+        /* padding:15px; */
+        margin:0;
+        padding:0;
+    }
+    
+    
+    .allDetails li{
+        
+        /* border:2px solid blue; */
+        width:auto;
+        /* padding:3px; */
+        padding:0;
+        margin:0;
+        color:black;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size:0.8rem;
+    
+    
+    }
+    
+    .allDetails li img{
+        
+        width:20px;
+        height:20px;
+        background-color: transparent;
+        /* display: none; */
+    }
+    .allDetails li:hover{
+        background-color: rgb(21 94 117);;
+        color:white;
+        
+        
+    }
+
+
+    
+}
+
+
+
+@media  (min-width:768px) and (max-width:992px) {
+    .studentNavCont{
+        width:100%;
+        height:10%;
+        border:2px solid red;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin:auto;
+    }
+
+    .studentDashNavLogo{
+        width:auto;
+        height:50%;
+        /* border:1px solid black; */
+        display: flex;
+        align-items: center;
+    }
+    
+    .studentDashNavLogo img{
+        width:40px;
+        height:40px;
+    }
+    .studentNavTitle{
+        width:auto;
+        height:100%;
+        /* border:2px solid red; */
+        padding:10px;
+        font-size: 1.5rem;
+        color:rgba(65, 105, 225, 0.998);
+    }
+    .studentNavProfile{
+        width:13%;
+        height:10%;
+        /* border:2px solid brown; */
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    
+    
+    }
+    .studentNavProfile img{
+        width:30px;
+        height:30px;
+        /* border:2px solid yellow; */
+    }
+    .studentNavProfile span{
+        font-size: 0.8rem;
+        /* border:2px solid yellow; */
+    }
+    
+    .studentInfoCont{
+        width:100%;
+        height:85vh;
+        /* border:1px solid red; */
+        display: flex;
+    
+    }
+    
+    .studentlftSideInfoCont{
+        width:20%;
+        height:auto;
+        /* border:5px solid red; */
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+ 
+    
+    .allDetails{
+        /* padding:10px; */
+        border-bottom: 1px solid gray;
+        cursor: pointer;
+        list-style: none;
+        width:auto;
+        /* padding:15px; */
+        margin:0;
+        padding:0;
+    }
+    
+    
+    .allDetails li{
+        
+        /* border:2px solid blue; */
+        width:auto;
+        /* padding:3px; */
+        padding:0;
+        margin:0;
+        color:black;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size:0.8rem;
+    
+    
+    }
+    
+    .allDetails li img{
+        
+        width:20px;
+        height:20px;
+        background-color: transparent;
+        /* display: none; */
+    }
+    .allDetails li:hover{
+        background-color: rgb(21 94 117);;
+        color:white;
+        
+        
+    }
+
+
+    
+}
+
+
+@media  (min-width:992px) and (max-width:1200px) {
+    .studentNavCont{
+        width:100%;
+        height:10%;
+        border:2px solid red;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin:auto;
+    }
+
+    .studentDashNavLogo{
+        width:15%;
+        height:50%;
+        /* border:1px solid black; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .studentDashNavLogo img{
+        width:40px;
+        height:40px;
+    }
+    .studentNavTitle{
+        width:70%;
+        height:100%;
+        /* border:2px solid red; */
+        padding:10px;
+        font-size: 1.6rem;
+        color:rgba(65, 105, 225, 0.998);
+        display: flex;
+        justify-content: center;
+    }
+    .studentNavProfile{
+        width:10%;
+        height:10%;
+        /* border:5px solid brown; */
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    
+    
+    }
+    .studentNavProfile img{
+        width:30px;
+        height:30px;
+        /* border:2px solid yellow; */
+    }
+    .studentNavProfile span{
+        font-size: 0.8rem;
+        /* border:2px solid yellow; */
+    }
+    
+    .studentInfoCont{
+        width:100%;
+        height:85vh;
+        /* border:1px solid red; */
+        display: flex;
+    
+    }
+    
+    .studentlftSideInfoCont{
+        width:20%;
+        height:auto;
+        /* border:5px solid red; */
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+ 
+    
+    .allDetails{
+        /* padding:10px; */
+        border-bottom: 1px solid gray;
+        cursor: pointer;
+        list-style: none;
+        width:auto;
+        /* padding:15px; */
+        margin:0;
+        padding:0;
+    }
+    
+    
+    .allDetails li{
+        
+        /* border:2px solid blue; */
+        width:auto;
+        /* padding:3px; */
+        padding:0;
+        margin:0;
+        color:black;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size:0.8rem;
+    
+    
+    }
+    
+    .allDetails li img{
+        
+        width:20px;
+        height:20px;
+        background-color: transparent;
+        /* display: none; */
+    }
+    .allDetails li:hover{
+        background-color: rgb(21 94 117);;
+        color:white;
+        
+        
+    }
+
+
+    
+}

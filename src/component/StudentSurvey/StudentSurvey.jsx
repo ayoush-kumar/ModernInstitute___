@@ -13,21 +13,8 @@ const satisfactionOptions = [
   { value: 'below 30%', label: 'Below 30%' },
 ];
 
-const responseOptions = [
-  { value: 'always_effective', label: 'Always effective' },
-  { value: 'mostly_effective', label: 'Mostly effective' },
-  { value: 'sometimes_effective', label: 'Sometimes effective' },
-  { value: 'rarely_effective', label: 'Rarely effective' },
-  { value: 'never_effective', label: 'Never effective' },
-];
 
-const agreementOptions = [
-  { value: 'strongly_agree', label: 'Strongly agree' },
-  { value: 'agree', label: 'Agree' },
-  { value: 'neutral', label: 'Neutral' },
-  { value: 'disagree', label: 'Disagree' },
-  { value: 'strongly_disagree', label: 'Strongly disagree' },
-];
+
 
 const StudentSurvey = () => {
   const [formData, setFormData] = useState({

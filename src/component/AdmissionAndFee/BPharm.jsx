@@ -9,7 +9,7 @@ const BPharm = () => {
     { id: 5, particulars: "Miscellaneous Fee", totalFee: "4000/-", firstYear: "1000/-", secondYear: "1000/-", thirdYear: "1000/-", fourthYear: "1000/-", scst: "4000/-", obcgen: "4000/-" },
     { id: 6, particulars: "Examination Fee", totalFee: "16000/-", firstYear: "4000/-", secondYear: "4000/-", thirdYear: "4000/-", fourthYear: "4000/-", scst: "16000/-", obcgen: "16000/-" },
     { id: 7, particulars: "Institute Development Fee", totalFee: "28000/-", firstYear: "7000/-", secondYear: "7000/-", thirdYear: "7000/-", fourthYear: "7000/-", scst: "28000/-", obcgen: "28000/-" },
-    { id: 8, particulars: "Total", totalFee: "4,10,000/-", firstYear: "1,10,000/-", secondYear: "1,00,000/-", thirdYear: "1,00,000/-", fourthYear: "1,00,000/-", scst: "4,05,000/-", obcgen: "4,10,000/-" },
+    { id: " ", particulars: "Total", totalFee: "4,10,000/-", firstYear: "1,10,000/-", secondYear: "1,00,000/-", thirdYear: "1,00,000/-", fourthYear: "1,00,000/-", scst: "4,05,000/-", obcgen: "4,10,000/-" },
   ];
 
   return (
@@ -18,7 +18,7 @@ const BPharm = () => {
       <table style={{ borderCollapse: 'collapse', width: '100%' }}>
         <thead>
           <tr>
-            <th style={tableHeaderStyle}>S.N.</th>
+            <th style={tableHeaderStyle}>S. No.</th>
             <th style={tableHeaderStyle}>Particulars</th>
             <th style={tableHeaderStyle}>Total Fee</th>
             <th style={tableHeaderStyle}>First Year</th>
@@ -41,7 +41,12 @@ const BPharm = () => {
               <td style={tableCellStyle}>{row.fourthYear}</td>
               <td style={tableCellStyle}>{row.scst}</td>
               <td style={tableCellStyle}>{row.obcgen}</td>
+            
+                          
             </tr>
+            
+
+            
           ))}
         </tbody>
       </table>

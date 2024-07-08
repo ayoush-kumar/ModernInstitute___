@@ -7,14 +7,15 @@ const CMD = () => {
     { id: 3, particulars: "Examination Fee", totalFee: "2000/-", scst: "2000/-", obcgen: "2000/-" },
     { id: 4, particulars: "Development Fee", totalFee: "1000/-", scst: "1000/-", obcgen: "1000/-" },
     { id: 5, particulars: "Miscellaneous Fee", totalFee: "2000/-", scst: "2000/-", obcgen: "2000/-" },
+    {id: " ",
+    particulars: "Total",
+    totalFee: "50,000/-",
+    scst: "45,000/-",
+    obcgen: "50,000/-"}
   ];
 
   const totalRow = {
-    id: 8,
-    particulars: "",
-    totalFee: "50,000/-",
-    scst: "45,000/-",
-    obcgen: "50,000/-"
+    
   };
 
   const tableStyle = {
@@ -27,6 +28,7 @@ const CMD = () => {
     border: '1px solid black',
     padding: '8px',
     textAlign: 'center',
+    textAlign: 'left',
   };
 
   const headerStyle = {
@@ -46,7 +48,7 @@ const CMD = () => {
       <table style={tableStyle}>
         <thead>
           <tr>
-            <th style={headerStyle}>Sl. No.</th>
+            <th style={headerStyle}>S. No.</th>
             <th style={headerStyle}>Particulars</th>
             <th style={headerStyle}>Total Fee</th>
             <th style={headerStyle}>SC/ST</th>
@@ -63,12 +65,6 @@ const CMD = () => {
               <td style={cellStyle}>{row.obcgen}</td>
             </tr>
           ))}
-          <tr>
-            <td style={cellStyle} colSpan="2"></td>
-            <td style={{...cellStyle, fontWeight: 'bold'}}>{totalRow.totalFee}</td>
-            <td style={{...cellStyle, fontWeight: 'bold'}}>{totalRow.scst}</td>
-            <td style={{...cellStyle, fontWeight: 'bold'}}>{totalRow.obcgen}</td>
-          </tr>
         </tbody>
       </table>
       <div style={noteStyle}>

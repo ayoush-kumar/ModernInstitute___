@@ -39,7 +39,7 @@ const PhyTech = () => {
       <table style={styles.table}>
         <thead>
           <tr>
-            <th style={styles.th}>Sl. No.</th>
+            <th style={styles.th}>S. No.</th>
             <th style={styles.th}>Particulars</th>
             <th style={styles.th}>Total Fee</th>
             <th style={styles.th}>First Year</th>
@@ -57,7 +57,8 @@ const PhyTech = () => {
             </tr>
           ))}
           <tr >
-            <td style={styles.td} colSpan="2"></td>
+            <td style={styles.td}></td>
+            <td style={styles.td}>Total</td>
             <td style={styles.td}>1,30,000/-</td>
             <td style={styles.td}>70,000/-</td>
             <td style={styles.td}>60,000/-</td>

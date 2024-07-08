@@ -9,17 +9,9 @@ const DPharmFeeStructure = () => {
     { id: 5, particulars: "Miscellaneous Fee", totalFee: "2000/-", firstYear: "1000/-", secondYear: "1000/-", scst: "2000/-", obcgen: "2000/-" },
     { id: 6, particulars: "Examination Fee", totalFee: "8000/-", firstYear: "4000/-", secondYear: "4000/-", scst: "8000/-", obcgen: "8000/-" },
     { id: 7, particulars: "Institute Development Fee", totalFee: "14000/-", firstYear: "7000/-", secondYear: "7000/-", scst: "14000/-", obcgen: "14000/-" },
+    { id: " ", particulars: "Total", totalFee: "2,10,000/-", firstYear: "1,10,000/-", secondYear: "1,00,000/-", scst: "2,05,000/-", obcgen: "2,10,000/-" },
   ];
 
-  const totalRow = {
-    id: 8,
-    particulars: "",
-    totalFee: "2,10,000/-",
-    firstYear: "1,10,000/-",
-    secondYear: "100000/-",
-    scst: "2,05,000/-",
-    obcgen: "2,10,000/-"
-  };
 
   const tableStyle = {
     borderCollapse: 'collapse',
@@ -30,13 +22,15 @@ const DPharmFeeStructure = () => {
   const cellStyle = {
     border: '1px solid black',
     padding: '8px',
-    textAlign: 'center',
+    textAlign: 'left',
   };
 
   const headerStyle = {
-    ...cellStyle,
-    backgroundColor: '#f2f2f2',
+      padding: '8px',
+      textAlign: 'left',
+      backgroundColor: '#f2f2f2',
     fontWeight: 'bold',
+    border: '1px solid black',
   };
 
   const noteStyle = {
@@ -50,7 +44,7 @@ const DPharmFeeStructure = () => {
       <table style={tableStyle}>
         <thead>
           <tr>
-            <th style={headerStyle}>Sl.</th>
+            <th style={headerStyle}>S. No.</th>
             <th style={headerStyle}>Particulars</th>
             <th style={headerStyle}>Total Fee</th>
             <th style={headerStyle}>First Year</th>
@@ -63,7 +57,7 @@ const DPharmFeeStructure = () => {
           {feeData.map((row) => (
             <tr key={row.id}>
               <td style={cellStyle}>{row.id}</td>
-              <td style={{...cellStyle, textAlign: 'left'}}>{row.particulars}</td>
+              <td style={cellStyle}>{row.particulars}</td>
               <td style={cellStyle}>{row.totalFee}</td>
               <td style={cellStyle}>{row.firstYear}</td>
               <td style={cellStyle}>{row.secondYear}</td>
@@ -71,14 +65,6 @@ const DPharmFeeStructure = () => {
               <td style={cellStyle}>{row.obcgen}</td>
             </tr>
           ))}
-          <tr>
-            <td style={cellStyle} colSpan="2"></td>
-            <td style={{...cellStyle, fontWeight: 'bold'}}>{totalRow.totalFee}</td>
-            <td style={{...cellStyle, fontWeight: 'bold'}}>{totalRow.firstYear}</td>
-            <td style={{...cellStyle, fontWeight: 'bold'}}>{totalRow.secondYear}</td>
-            <td style={{...cellStyle, fontWeight: 'bold'}}>{totalRow.scst}</td>
-            <td style={{...cellStyle, fontWeight: 'bold'}}>{totalRow.obcgen}</td>
-          </tr>
         </tbody>
       </table>
       <div style={noteStyle}>

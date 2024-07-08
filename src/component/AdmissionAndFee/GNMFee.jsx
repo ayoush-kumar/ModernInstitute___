@@ -29,6 +29,7 @@ const CourseTables = () => {
       
 
       <h2 style={{textAlign:'center'}} >Fee Structure General Nursing Midwifery(G.N.M.)</h2>
+      <h3 style={{textAlign: 'left', color:'red'}}>Age Limit : 17 to 35 years</h3>
       <table style={{borderCollapse: 'collapse', width: '100%'}}>
         <thead>
           <tr style={{backgroundColor: '#8B0000'}}>
@@ -56,7 +57,8 @@ const CourseTables = () => {
             </tr>
           ))}
           <tr style={{backgroundColor: '#f2f2f2', fontWeight: 'bold'}}>
-            <td style={tableCellStyle} colSpan="2">Total</td>
+            <td style={tableCellStyle} ></td>
+            <td style={tableCellStyle} >Total</td>
             <td style={tableCellStyle}>{gnmTotalRow.totalFee}</td>
             <td style={tableCellStyle}>{gnmTotalRow.firstYear}</td>
             <td style={tableCellStyle}>{gnmTotalRow.secondYear}</td>
@@ -67,8 +69,8 @@ const CourseTables = () => {
         </tbody>
       </table>
       <p style={{color: 'red', marginTop: '10px'}}>
-        Note:- (1) Hostel Fee (Lodging & Fooding) - 48000/- ( Forty Eight thousand) per year. (Optional)
-        (11) Cost of Books - 1800/- (Six thousand rupees only) per year.
+        Note:- (i) Hostel Fee (Lodging & Fooding) - 48000/- ( Forty Eight thousand) per year. (Optional)<br/>
+        (ii) Cost of Books - 1800/- (Six thousand rupees only) per year.
       </p>
     </div>
   );

@@ -42,7 +42,7 @@ const HomePage = () => {
               <td className="hover-effect">
                 <Link to="/Facilities">Facilities</Link>
                 </td>
-              <td className="hover-effect">HRD - BIhar</td>
+              <td className="hover-effect">HRD - Bihar</td>
             </tr>
             <tr>
               <td className="hover-effect">

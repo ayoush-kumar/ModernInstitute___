@@ -9,15 +9,15 @@ const DentalMechanicalFeeStructure = () => {
     { id: 5, particulars: "Miscellaneous Fee", totalFee: "3000/-", firstYear: "1500/-", secondYear: "1500/-" },
     { id: 6, particulars: "Examination Fee", totalFee: "8000/-", firstYear: "4000/-", secondYear: "4000/-" },
     { id: 7, particulars: "Institute Development Fee", totalFee: "10000/-", firstYear: "5000/-", secondYear: "5000/-" },
+    {
+      id: " ",
+      particulars: "Total",
+      totalFee: "1,30,000/-",
+      firstYear: "70,000/-",
+      secondYear: "60,000/-"
+    }
   ];
 
-  const totalRow = {
-    id: 8,
-    particulars: "",
-    totalFee: "1,30,000/-",
-    firstYear: "70,000/-",
-    secondYear: "60,000/-"
-  };
 
   const tableStyle = {
     borderCollapse: 'collapse',
@@ -34,6 +34,7 @@ const DentalMechanicalFeeStructure = () => {
     ...cellStyle,
     backgroundColor: '#f2f2f2',
     fontWeight: 'bold',
+    textAlign: 'left',
   };
 
   const noteStyle = {
@@ -48,7 +49,7 @@ const DentalMechanicalFeeStructure = () => {
       <table style={tableStyle}>
         <thead>
           <tr>
-            <th style={headerStyle}>Sl. No.</th>
+            <th style={headerStyle}>S. No.</th>
             <th style={headerStyle}>Particulars</th>
             <th style={headerStyle}>Total Fee</th>
             <th style={headerStyle}>First Year</th>
@@ -65,12 +66,7 @@ const DentalMechanicalFeeStructure = () => {
               <td style={cellStyle}>{row.secondYear}</td>
             </tr>
           ))}
-          <tr>
-            <td style={cellStyle} colSpan="2"></td>
-            <td style={{...cellStyle, fontWeight: 'bold'}}>{totalRow.totalFee}</td>
-            <td style={{...cellStyle, fontWeight: 'bold'}}>{totalRow.firstYear}</td>
-            <td style={{...cellStyle, fontWeight: 'bold'}}>{totalRow.secondYear}</td>
-          </tr>
+
         </tbody>
       </table>
       <div style={noteStyle}>

@@ -46,7 +46,7 @@ const XrayTech = () => {
       <table style={styles.table}>
         <thead>
           <tr>
-            <th style={styles.th}>Sl. No.</th>
+            <th style={styles.th}>S. No.</th>
             <th style={styles.th}>Particulars</th>
             <th style={styles.th}>Total Fee</th>
             <th style={styles.th}>First Year</th>
@@ -64,7 +64,8 @@ const XrayTech = () => {
             </tr>
           ))}
           <tr style={{...styles.td, ...styles.totalRow}}>
-            <td colSpan="2">Total</td>
+            <td></td>
+            <td >Total</td>
             <td>1,30,000/-</td>
             <td>70,000/-</td>
             <td>60,000/-</td>

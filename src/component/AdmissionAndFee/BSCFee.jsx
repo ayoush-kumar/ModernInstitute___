@@ -32,7 +32,7 @@ const BSCFee = () => {
       <table style={{borderCollapse: 'collapse', width: '100%'}}>
         <thead>
           <tr style={{backgroundColor: '#8B0000'}}>
-            <th style={tableHeaderStyle}>S.N.</th>
+            <th style={tableHeaderStyle}>S. No.</th>
             <th style={tableHeaderStyle}>Particulars</th>
             <th style={tableHeaderStyle}>Total Fee</th>
             <th style={tableHeaderStyle}>First Year</th>
@@ -58,7 +58,8 @@ const BSCFee = () => {
             </tr>
           ))}
           <tr style={{backgroundColor: '#f2f2f2', fontWeight: 'bold'}}>
-            <td style={tableCellStyle} colSpan="2">Total</td>
+            <td style={tableCellStyle} ></td>
+            <td style={tableCellStyle} >Total</td>
             <td style={tableCellStyle}>{bscNursingTotalRow.totalFee}</td>
             <td style={tableCellStyle}>{bscNursingTotalRow.firstYear}</td>
             <td style={tableCellStyle}>{bscNursingTotalRow.secondYear}</td>

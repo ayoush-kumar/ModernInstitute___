@@ -25,7 +25,7 @@ const BPT = () => {
       <table style={styles.table}>
         <thead>
           <tr style={styles.headerRow}>
-            <th style={styles.th}>Sl.</th>
+            <th style={styles.th}>S. No.</th>
             <th style={styles.th}>Particulars</th>
             <th style={styles.th}>Total Fee</th>
             <th style={styles.th}>First Year</th>
@@ -104,7 +104,8 @@ const BPT = () => {
             <td style={styles.td}>4000/-</td>
           </tr>
           <tr>
-            <td style={styles.td} colSpan="2">Total</td>
+            <td style={styles.td}></td>
+            <td style={styles.td}>Total</td>
             <td style={styles.td}>4,10,000/-</td>
             <td style={styles.td}>1,10,000/-</td>
             <td style={styles.td}>1,00,000/-</td>

@@ -26,7 +26,7 @@ const BasicFee = () => {
     <table style={{borderCollapse: 'collapse', width: '100%'}}>
       <thead>
         <tr style={{backgroundColor: '#8B0000'}}>
-          <th style={tableHeaderStyle}>S. N.</th>
+          <th style={tableHeaderStyle}>S. No.</th>
           <th style={tableHeaderStyle}>Course</th>
           <th style={tableHeaderStyle}>Duration</th>
           <th style={tableHeaderStyle}>Eligibility</th>

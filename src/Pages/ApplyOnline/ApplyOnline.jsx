@@ -293,7 +293,7 @@ const ApplyOnline = () => {
             </div> */}
 
 <div className="form-group">
-              <label>4A-Address for Correspondence*</label>
+              <label>4A - Address for Correspondence*</label>
               <input
                 type="text"
                 name="CorrespondenceAddress"

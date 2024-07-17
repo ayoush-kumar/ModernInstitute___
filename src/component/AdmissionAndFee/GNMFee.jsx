@@ -33,7 +33,7 @@ const CourseTables = () => {
       <table style={{borderCollapse: 'collapse', width: '100%'}}>
         <thead>
           <tr style={{backgroundColor: '#8B0000'}}>
-            <th style={tableHeaderStyle}>S.N.</th>
+            <th style={tableHeaderStyle}>S. No.</th>
             <th style={tableHeaderStyle}>Particulars</th>
             <th style={tableHeaderStyle}>Total Fee</th>
             <th style={tableHeaderStyle}>First Year</th>
@@ -45,7 +45,7 @@ const CourseTables = () => {
         </thead>
         <tbody>
           {gnmFeeStructure.map((fee) => (
-            <tr key={fee.sn} style={{backgroundColor: fee.sn % 2 === 0 ? '#f2f2f2' : 'white'}}>
+            <tr key={fee.sn} >
               <td style={tableCellStyle}>{fee.sn}</td>
               <td style={tableCellStyle}>{fee.particulars}</td>
               <td style={tableCellStyle}>{fee.totalFee}</td>
@@ -56,7 +56,7 @@ const CourseTables = () => {
               <td style={tableCellStyle}>{fee.obcGen}</td>
             </tr>
           ))}
-          <tr style={{backgroundColor: '#f2f2f2', fontWeight: 'bold'}}>
+          <tr >
             <td style={tableCellStyle} ></td>
             <td style={tableCellStyle} >Total</td>
             <td style={tableCellStyle}>{gnmTotalRow.totalFee}</td>
@@ -69,8 +69,8 @@ const CourseTables = () => {
         </tbody>
       </table>
       <p style={{color: 'red', marginTop: '10px'}}>
-        Note:- (i) Hostel Fee (Lodging & Fooding) - 48000/- ( Forty Eight thousand) per year. (Optional)<br/>
-        (ii) Cost of Books - 1800/- (Six thousand rupees only) per year.
+        Note:- <br/>(i) Hostel Fee (Lodging & Fooding) - 48000/- ( Forty Eight Thousand) per year. (Optional)<br/>
+        (ii) Cost of Books - 1800/- (One Thousand Eight Hundred rupees only) per year.
       </p>
     </div>
   );

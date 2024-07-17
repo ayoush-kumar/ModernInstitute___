@@ -45,7 +45,7 @@ const BSCFee = () => {
         </thead>
         <tbody>
           {bscNursingFeeStructure.map((fee) => (
-            <tr key={fee.sn} style={{backgroundColor: fee.sn % 2 === 0 ? '#f2f2f2' : 'white'}}>
+            <tr key={fee.sn} >
               <td style={tableCellStyle}>{fee.sn}</td>
               <td style={tableCellStyle}>{fee.particulars}</td>
               <td style={tableCellStyle}>{fee.totalFee}</td>
@@ -57,7 +57,7 @@ const BSCFee = () => {
               <td style={tableCellStyle}>{fee.obcGen}</td>
             </tr>
           ))}
-          <tr style={{backgroundColor: '#f2f2f2', fontWeight: 'bold'}}>
+          <tr >
             <td style={tableCellStyle} ></td>
             <td style={tableCellStyle} >Total</td>
             <td style={tableCellStyle}>{bscNursingTotalRow.totalFee}</td>
@@ -71,8 +71,8 @@ const BSCFee = () => {
         </tbody>
       </table>
       <p style={{color: 'red', marginTop: '10px'}}>
-        Note:- (1) Hostel Fee (Lodging & Fooding) - 48000/- ( Forty Eight thousand) per year. (Optional)
-        (11) Cost of Books - 5000/- (Six thousand rupees only) per year.
+        Note:- <br/>(i) Hostel Fee (Lodging & Fooding) - 48000/- ( Forty Eight Thousand) per year. (Optional)<br/>
+        (ii) Cost of Books - 5000/- (Five Thousand rupees only) per year.
       </p>
     </div>
   );

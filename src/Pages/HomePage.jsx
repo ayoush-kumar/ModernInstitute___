@@ -6,6 +6,7 @@ import BotToTop from "../component/BottomToTop";
 import UniversityHeading from "../component/Home/University/UniversityHeading";
 import FindOutHeading from "../component/AboutUs/FindOutMore/FindOutHeading";
 import FindOutMore from "../component/AboutUs/FindOutMore/FindOutMore";
+// import FindOutSlider from "../component/AboutUs/FindOutMore/FindOutSlider.jsx";
 import rectangle from "../assets/images/Rectangle1326.png";
 import stylesmodule from "../style/layout.module.css";
 
@@ -22,58 +23,58 @@ const HomePage = () => {
             <tr>
               {" "}
               <td className="hover-effect">
-              <Link to="/AdmissionAndFee">Admission & Fee</Link>
+              <Link to="/AdmissionAndFee">ADMISSION & FEE</Link>
                 </td>
               <td rowSpan={8}>
                 <img src={rectangle} alt="noimage" />
               </td>
               <td className="hover-effect">
 
-                <Link to='./GBMembers'>G.B. Members</Link>
+                <Link to='./GBMembers'> G.B. MEMBERS</Link>
                 </td>
             </tr>
             <tr>
               <td className="hover-effect">
-                <Link to="/Alumni">Alumni</Link>
+                <Link to="/Alumni">ALUMNI</Link>
               </td>
-              <td className="hover-effect">College Committees</td>
+              <td className="hover-effect">COLLEGE COMMITTEES</td>
             </tr>
             <tr>
               <td className="hover-effect">
-                <Link to="/Facilities">Facilities</Link>
+                <Link to="/Facilities">FACILITIES</Link>
                 </td>
-              <td className="hover-effect">HRD - Bihar</td>
+              <td className="hover-effect">HRD - BIHAR</td>
             </tr>
             <tr>
               <td className="hover-effect">
-                <Link to="/GeneralRules">General Rules</Link>
+                <Link to="/GeneralRules">GENERAL RULES</Link>
                 </td>
               <td className="hover-effect">UGC</td>
             </tr>
             <tr>
               <td className="hover-effect">
-                <Link to='/CodeOfConduct'>Code of Conduct</Link></td>
+                <Link to='/CodeOfConduct'>CODE OF CONDUCT</Link></td>
               <td className="hover-effect">NAAC</td>
             </tr>
             <tr>
               <td className="hover-effect">
-                <Link to="/CodeOfEthics">Code of Ethics</Link>
+                <Link to="/CodeOfEthics">CODE OF ETHICS</Link>
               </td>
-              <td className="hover-effect">Patliputra University</td>
+              <td className="hover-effect">PATLIPUTRA UNIVERSITY</td>
             </tr>
             <tr>
             
               <td className="hover-effect">
-              <Link to="/CoreValue">Core Value</Link>
+              <Link to="/CoreValue">CORE VALUE</Link>
               </td>
-              <td className="hover-effect">Bihar Intermediate</td>
+              <td className="hover-effect">BIHAR INTERMEDIATE </td>
             </tr>
             <tr>
               <td className="hover-effect">
-                <Link to='/StudentSurvey'>Student Survey</Link>
+                <Link to='/StudentSurvey'>STUDENT SURVEY</Link>
                 </td>
               <td className="hover-effect">
-                <Link to="/Contact">Contact</Link>
+                <Link to="/Contact">CONTACT</Link>
                 </td>
             </tr>
           </tbody>
@@ -94,6 +95,7 @@ const HomePage = () => {
 
         <FindOutHeading />
         <FindOutMore />
+        {/* <FindOutSlider /> */}
       </Layout>
     </>
   );

@@ -18,9 +18,7 @@ const MedLabTechFeeStructure = () => {
     }
   ];
 
-  const totalRow = {
-    
-  };
+
 
   const styles = {
     table: {
@@ -70,9 +68,8 @@ const MedLabTechFeeStructure = () => {
         </tbody>
       </table>
       <div style={styles.note}>
-        <p>Note:-</p>
-        <p>(I) Hostel Fee (Lodging &Fooding) - 48000/- (Forty Eight thousand) per year (Optional)</p>
-        <p>(II) Cost of Books - 6000/- (Six thousand rupees only) per year</p>
+        <p>Note:-<br/>(i) Hostel Fee (Lodging & Fooding) - 48000/- (Forty Eight Thousand) per year (Optional)<br/>
+        (ii) Cost of Books - 6000/- (Six Thousand rupees only) per year</p>
       </div>
     </div>
   );

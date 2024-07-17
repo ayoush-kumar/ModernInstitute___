@@ -14,9 +14,7 @@ const CMD = () => {
     obcgen: "50,000/-"}
   ];
 
-  const totalRow = {
-    
-  };
+
 
   const tableStyle = {
     borderCollapse: 'collapse',
@@ -25,9 +23,9 @@ const CMD = () => {
   };
 
   const cellStyle = {
-    border: '1px solid black',
+   
     padding: '8px',
-    textAlign: 'center',
+    // textAlign: 'center',
     textAlign: 'left',
   };
 
@@ -68,9 +66,8 @@ const CMD = () => {
         </tbody>
       </table>
       <div style={noteStyle}>
-        <p>Note:-</p>
-        <p>(1) Hostel Fee (Lodging & Fooding) - 48000/- ( Forty Eight thousand) per year (Optional)</p>
-        <p>(II) Cost of Books - 2500/- (Two thousand Five Hundred rupees only) per year</p>
+        <p>Note:-<br/>(i) Hostel Fee (Lodging & Fooding) - 48000/- ( Forty Eight Thousand) per year (Optional)<br/>
+        (ii) Cost of Books - 2500/- (Two Thousand Five Hundred rupees only) per year</p>
       </div>
     </div>
   );

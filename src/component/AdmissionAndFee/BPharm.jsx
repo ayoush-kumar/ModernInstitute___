@@ -51,8 +51,8 @@ const BPharm = () => {
         </tbody>
       </table>
       <p style={{color: 'red', marginTop: '10px'}}>
-      Note:- Hostel Fee (Lodging & Fooding) - 48000/- ( Forty Eight thousand) per year (Optional)
-        Cost of Books - 6000/- (Six thousand rupees only) per year
+      Note:- <br/>(i) Hostel Fee (Lodging & Fooding) - 48000/- ( Forty Eight Thousand) per year (Optional) <br/>
+        (ii) Cost of Books - 6000/- (Six Thousand rupees only) per year
       </p>
      
     </div>

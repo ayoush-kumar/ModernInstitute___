@@ -5,7 +5,7 @@ const BasicFee = () => {
     { sn: 1, course: "Auxiliary Nursing & Midwifery(ANM)", duration: "2 Years", eligibility: "10+2 (Arts, Sci, Com)", fees: "Rs. 1,50,000/-" },
     { sn: 2, course: "General Nursing & Midwifery(GNM) (Bihar Student Credit Card Available)", duration: "3 Years", eligibility: "10+2(Arts, Sci, Com) with eng.", fees: "Rs. 5,80,000/-" },
     { sn: 3, course: "Bachelor of Science in Nursing(Bsc Nursing) (Bihar Student Credit Card Available)", duration: "4 Years", eligibility: "10+2 PCB 50% with eng.", fees: "Rs. 6,50,000/-" },
-    { sn: 4, course: "Diploma in Pharmacy(D.Pharm)", duration: "2 Years", eligibility: "10+2 PCBM with eng", fees: "Rs. 2,00,000/-" },
+    { sn: 4, course: "Diploma in Pharmacy(D.Pharm)", duration: "2 Years", eligibility: "10+2 PCBM with eng.", fees: "Rs. 2,00,000/-" },
     { sn: 5, course: "Bachelor of Pharmacy(B.Pharm) (Bihar Student Credit Card Available)", duration: "4 Years", eligibility: "10+2 PCBM with eng.", fees: "Rs. 4,00,000/-" },
     { sn: 6, course: "Certificate in Medical Dresse(CMD)", duration: "1 Years", eligibility: "Matriculation", fees: "Rs. 50,000/-" },
     { sn: 7, course: "Certificate in Dental Mechanical(CDM)", duration: "2 Years", eligibility: "10+2 PCB", fees: "Rs. 1,30,000/-" },
@@ -16,7 +16,7 @@ const BasicFee = () => {
     { sn: 12, course: "Diploma in ECG(DECG)", duration: "2 Years", eligibility: "10+2 PCB", fees: "Rs. 1,30,000/-" },
     { sn: 13, course: "Bachelor of Physiotherapy(BPT) (Bihar Student Credit Card Available)", duration: "4 Years", eligibility: "10+2 PCB", fees: "Rs. 4,10,000/-" },
     { sn: 14, course: "Bachelor of Occupational Therapy(BOT) (Bihar Student Credit Card Available)", duration: "4 Years", eligibility: "10+2 PCB", fees: "Rs. 4,10,000/-" },
-    { sn: 15, course: "Bachelor of Hospital Management(BHM) (Bihar Student Credit Card Available)", duration: "4 Years", eligibility: "10+2 With English", fees: "Rs. 4,10,000/-" },
+    { sn: 15, course: "Bachelor of Hospital Management(BHM) (Bihar Student Credit Card Available)", duration: "4 Years", eligibility: "10+2 With eng.", fees: "Rs. 4,10,000/-" },
     { sn: 16, course: "Bachelor of Medical Laboratory Technology(BMLT)", duration: "4 Years", eligibility: "10+2 PCB", fees: "Rs. 4,10,000/-" },
   ];
 
@@ -35,7 +35,7 @@ const BasicFee = () => {
       </thead>
       <tbody>
         {courses.map((course) => (
-          <tr key={course.sn} style={{backgroundColor: course.sn % 2 === 0 ? '#f2f2f2' : 'white'}}>
+          <tr key={course.sn} >
             <td style={tableCellStyle}>{course.sn}</td>
             <td style={tableCellStyle}>{course.course}</td>
             <td style={tableCellStyle}>{course.duration}</td>
@@ -61,5 +61,8 @@ const tableCellStyle = {
   border: '1px solid #ddd',
   padding: '8px',
 };
+
+
+
 
 export default BasicFee;

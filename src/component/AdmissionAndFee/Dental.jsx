@@ -25,7 +25,7 @@ const DentalMechanicalFeeStructure = () => {
   };
 
   const cellStyle = {
-    border: '1px solid black',
+   
     padding: '8px',
     textAlign: 'center',
   };
@@ -59,20 +59,19 @@ const DentalMechanicalFeeStructure = () => {
         <tbody>
           {feeData.map((row) => (
             <tr key={row.id}>
-              <td style={cellStyle}>{row.id}</td>
+              <td style={{...cellStyle, textAlign: 'left'}}>{row.id}</td>
               <td style={{...cellStyle, textAlign: 'left'}}>{row.particulars}</td>
-              <td style={cellStyle}>{row.totalFee}</td>
-              <td style={cellStyle}>{row.firstYear}</td>
-              <td style={cellStyle}>{row.secondYear}</td>
+              <td style={{...cellStyle, textAlign: 'left'}}>{row.totalFee}</td>
+              <td style={{...cellStyle, textAlign: 'left'}}>{row.firstYear}</td>
+              <td style={{...cellStyle, textAlign: 'left'}}>{row.secondYear}</td>
             </tr>
           ))}
 
         </tbody>
       </table>
       <div style={noteStyle}>
-        <p>Note:-</p>
-        <p>(I) Hostel Fee (Lodging & Fooding) - 48000/- (Forty Eight thousand) per year (Optional)</p>
-        <p>(II) Cost of Books - 6000/- (Six thousand rupees only) per year</p>
+        <p>Note:-<br/>(i) Hostel Fee (Lodging & Fooding) - 48000/- (Forty Eight Thousand) per year (Optional)<br/>
+        (ii) Cost of Books - 6000/- (Six Thousand rupees only) per year</p>
       </div>
     </div>
   );

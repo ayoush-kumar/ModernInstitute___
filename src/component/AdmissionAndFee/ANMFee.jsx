@@ -31,7 +31,7 @@ const CourseTables = () => {
         
       </table>
 
-      <h2 style={{textAlign:'center'}} >Fee Structure for Auxiliary Nursing Midwifery(A.N.M)</h2>
+      <h2 style={{textAlign:'center'}} >Fee Structure for Auxiliary Nursing Midwifery(A.N.M.)</h2>
       <h3 style={{textAlign: 'left', color:'red'}}>Age Limit : 17 to 35 years</h3>
       <table style={{borderCollapse: 'collapse', width: '100%'}}>
         <thead>
@@ -47,7 +47,7 @@ const CourseTables = () => {
         </thead>
         <tbody>
           {feeStructure.map((fee) => (
-            <tr key={fee.sn} style={{backgroundColor: fee.sn % 2 === 0 ? '#f2f2f2' : 'white'}}>
+            <tr key={fee.sn} >
               <td style={tableCellStyle}>{fee.sn}</td>
               <td style={tableCellStyle}>{fee.particulars}</td>
               <td style={tableCellStyle}>{fee.totalFee}</td>
@@ -57,7 +57,7 @@ const CourseTables = () => {
               <td style={tableCellStyle}>{fee.obcGen}</td>
             </tr>
           ))}
-          <tr style={{backgroundColor: '#f2f2f2', fontWeight: 'bold'}}>
+          <tr>
 
             <td style={tableCellStyle} ></td>
             <td style={tableCellStyle} >Total</td>
@@ -70,8 +70,8 @@ const CourseTables = () => {
         </tbody>
       </table>
       <p style={{color: 'red', marginTop: '10px'}}>
-        Note:- (i) Hostel Fee (Lodging & Fooding) - 48000/- ( Forty Eight thousand) per year. (Optional)<br/>
-        (ii) Cost of Books - 1800/- (Six thousand rupees only) per year.
+        Note:-<br/> (i) Hostel Fee (Lodging & Fooding) - 48000/- ( Forty Eight Thousand) per year. (Optional)<br/>
+        (ii) Cost of Books - 1800/- (One Thousand Eight Hundred rupees only) per year.
       </p>
     </div>
   );

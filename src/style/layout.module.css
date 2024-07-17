@@ -2,25 +2,37 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  
 }
 
 .HeaderTop {
+  background-color: #01AEF0;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 90vw;
-  height: 15vh;
-  margin-left: 5vw;
+  height: 140px;
+  
 }
 
 .logos {
   display: flex;
   align-items: center;
   gap: 15px;
+  
 }
 
-.collegeName {
-  font-size: 1.8rem;
+.logos img{
+  width: 600px;
+  height: 130px;
+  position: fixed;
+  left: 2%;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+
+
+/* font-size: 1.8rem;
   color: #2a2a72;
   font-family: "Poppins", sans-serif;
   font-weight: 700;
@@ -28,12 +40,42 @@
   letter-spacing: 1px;
   transition: transform 0.3s ease;
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  cursor: pointer;
+  cursor: pointer; */
+
+
+.collegeName {
+  font-family: Arial, sans-serif;
+  font-weight: 850;
+  font-size: 1.8rem;
+  color: #ff0000;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 10px 0;
+  /* transition: transform 0.3s ease; */
+
+  -webkit-text-stroke: 1.5px white;
+  /* position: fixed; */
+  /* top: -20%; */
+  /* left: -8%; */
+  
 }
 
-.collegeName:hover {
-  transform: scale(0.9);
+.collegeNameSubtext{
+  font-family: Arial, sans-serif;
+  font-size: 0.6rem;
+  color: #ffffff;
+  line-height: 1.4;
+  padding: 0.5rem;
+
+  /* position: fixed;
+  top: 30%; */
+  
 }
+
+
+/* .collegeName:hover {
+  transform: scale(0.9);
+} */
 
 .loginButton {
   background-color: #ff3366;

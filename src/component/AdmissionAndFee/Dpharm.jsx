@@ -20,7 +20,7 @@ const DPharmFeeStructure = () => {
   };
 
   const cellStyle = {
-    border: '1px solid black',
+  
     padding: '8px',
     textAlign: 'left',
   };
@@ -30,7 +30,7 @@ const DPharmFeeStructure = () => {
       textAlign: 'left',
       backgroundColor: '#f2f2f2',
     fontWeight: 'bold',
-    border: '1px solid black',
+
   };
 
   const noteStyle = {
@@ -41,7 +41,7 @@ const DPharmFeeStructure = () => {
   return (
     <div>
       <h2 >Fee Structure for Diploma in Pharmacy (D.Pharm)</h2>
-      <table style={tableStyle}>
+      <table style={{tableStyle, width: '100%'}}>
         <thead>
           <tr>
             <th style={headerStyle}>S. No.</th>
@@ -68,9 +68,9 @@ const DPharmFeeStructure = () => {
         </tbody>
       </table>
       <div style={noteStyle}>
-        <p>Note:-</p>
-        <p>(1) Hostel Fee (Lodging & Fooding) - 48000/- ( Forty Eight thousand) per year (Optional)</p>
-        <p>(II) Cost of Books - 6000/- (Six thousand rupees only) per year</p>
+        <p>Note:-<br/>(i) Hostel Fee (Lodging & Fooding) - 48000/- ( Forty Eight Thousand) per year (Optional)
+        <br/>(ii) Cost of Books - 6000/- (Six Thousand rupees only) per year
+        </p>
       </div>
     </div>
   );

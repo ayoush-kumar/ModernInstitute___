@@ -1,107 +1,80 @@
-import { useState } from "react";
-import { useNavigate } from "react-router-dom";
 import "../../style/AdminDashboard/Login.css";
-import { ToastContainer, toast } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
+// src/components/AdminAuth.js
+import React, { useState } from 'react';
+import axios from 'axios';
 
-function AdminLogin() {
+
+const AdminAuth = () => {
+  const [isSignup, setIsSignup] = useState(true);
   const [formData, setFormData] = useState({
-    userName: "",
-    password: ""
+    username: '',
+    email: '',
+    password: '',
   });
-  const [loading, setLoading] = useState(false);
 
-  const navigate = useNavigate();
+  const { username, email, password } = formData;
 
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData({ ...formData, [name]: value });
+  const toggleAuthMode = () => {
+    setIsSignup(!isSignup);
   };
 
-  const handleSubmit = (e) => {
+  const onChange = (e) => setFormData({ ...formData, [e.target.name]: e.target.value });
+
+  const onSubmit = async (e) => {
     e.preventDefault();
-    console.log(formData);
-    setLoading(true);
-
-    fetch(
-      `https://university-project-paresh.onrender.com/University/Admin/signIn`,
-      {
-        method: "POST",
-        body: JSON.stringify(formData),
-        headers: {
-          "Content-Type": "application/json"
-        }
+    const url = isSignup ? '/api/admin/signup' : '/api/admin/login';
+    try {
+      const res = await axios.post(url, formData);
+      console.log(res.data);
+      // Handle token storage and redirection if login
+      if (!isSignup) {
+        // Example: localStorage.setItem('token', res.data.token);
+        // Redirect to admin dashboard or other page
       }
-    )
-      .then((res) => res.json())
-      .then((res) => {
-        console.log(res);
-        toast.error(res.error);
-        // alert(res.error);
-        if (res.message) {
-          localStorage.setItem("token", res.accessToken);
-          toast.success(res.message);
-          alert(res.message);
-          navigate("/admin-dashboard/profile");
-        }
-      })
-      .catch((err) => {
-        console.log(err);
-        toast.error(err);
-      })
-      .finally(() => {
-        setLoading(false);
-      });
-
-    setFormData({
-      userName: "",
-      password: ""
-    });
+    } catch (err) {
+      console.error(err.response.data);
+    }
   };
-
-  const { userName, password } = formData;
 
   return (
-    <section className="adminLoginContainer">
-      <ToastContainer />
-      <div className="login-container">
-        <div className="circle circle-one"></div>
-        <div className="form-container">
-          <img
-            src="https://logodix.com/logo/1707130.png"
-            alt="illustration"
-            className="illustration"
-          />
-          <h1 className="opacity"> Login</h1>
-          <form onSubmit={handleSubmit}>
+    <div className="auth-container">
+      <div className="auth-box">
+        <h2>{isSignup ? 'Admin Signup' : 'Admin Login'}</h2>
+        <form onSubmit={onSubmit}>
+          {isSignup && (
             <input
               type="text"
-              placeholder="USERNAME"
-              name="userName"
-              value={userName}
-              onChange={handleChange}
+              placeholder="Username"
+              name="username"
+              value={username}
+              onChange={onChange}
+              required
             />
-            <input
-              type="password"
-              placeholder="PASSWORD"
-              name="password"
-              value={password}
-              onChange={handleChange}
-            />
-            <button type="submit" className="opacity" disabled={loading}>
-              {loading ? "Loading..." : "SUBMIT"}
-            </button>
-          </form>
-          <div className="register-forget opacity">
-            <div href="">REGISTER</div>
-            <div href="">FORGOT PASSWORD</div>
-          </div>
-        </div>
-        <div className="circle circle-two"></div>
+          )}
+          <input
+            type="email"
+            placeholder="Email"
+            name="email"
+            value={email}
+            onChange={onChange}
+            required
+          />
+          <input
+            type="password"
+            placeholder="Password"
+            name="password"
+            value={password}
+            onChange={onChange}
+            required
+          />
+          <button type="submit">{isSignup ? 'Sign Up' : 'Login'}</button>
+        </form>
+        <button onClick={toggleAuthMode} className="switch-button">
+          {isSignup ? 'Switch to Login' : 'Switch to Signup'}
+        </button>
       </div>
-      <div className="theme-btn-container"></div>
-    </section>
+    </div>
   );
-}
+};
 
-export default AdminLogin;
+export default AdminAuth;

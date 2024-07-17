@@ -13,11 +13,7 @@ const ECGtech = () => {
       ];
     
       const styles = {
-    
-        table: {
-          width: '100%',
-          borderCollapse: 'collapse',
-        },
+  
         th: {
           border: '1px solid #ddd',
           padding: '8px',
@@ -26,6 +22,7 @@ const ECGtech = () => {
         td: {
           border: '1px solid #ddd',
           padding: '8px',
+          textAlign: 'left',
         },
         note: {
           marginTop: '20px',
@@ -37,7 +34,7 @@ const ECGtech = () => {
       return (
         <div >
           <h2>Fee Structure for Diploma in ECG Technology</h2>
-          <table style={styles.table}>
+          <table >
             <thead>
               <tr>
                 <th style={styles.th}>S. No.</th>
@@ -67,9 +64,9 @@ const ECGtech = () => {
             </tbody>
           </table>
           <div style={styles.note}>
-            <p>Note:-</p>
-            <p>(I) Hostel Fee (Lodging &Fooding) - 48000/- (Forty Eight thousand) per year: (Optional)</p>
-            <p>(II) Cost of Books - 6000/- (Six thousand rupees only) per year:</p>
+            <p>Note:-<br/>
+            (i) Hostel Fee (Lodging & Fooding) - 48000/- (Forty Eight Thousand) per year: (Optional)<br/>
+            (i) Cost of Books - 6000/- (Six Thousand rupees only) per year:</p>
           </div>
         </div>
   )

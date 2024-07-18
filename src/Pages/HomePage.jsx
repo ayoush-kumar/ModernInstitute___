@@ -1,11 +1,12 @@
 import React from "react";
 import Layout from "../component/Layouts/Layout";
-import styles from "../style/homepage.module.css";
-import { AboutUni } from "../Data/AboutUni";
+// import styles from "../style/homepage.module.css";
+// import { AboutUni } from "../Data/AboutUni";
 import BotToTop from "../component/BottomToTop";
 import UniversityHeading from "../component/Home/University/UniversityHeading";
 import FindOutHeading from "../component/AboutUs/FindOutMore/FindOutHeading";
 import FindOutMore from "../component/AboutUs/FindOutMore/FindOutMore";
+import UniversityCards from "../component/AboutUs/FindOutMore/UniversityCards";
 // import FindOutSlider from "../component/AboutUs/FindOutMore/FindOutSlider.jsx";
 import rectangle from "../assets/images/Rectangle1326.png";
 import stylesmodule from "../style/layout.module.css";
@@ -82,16 +83,7 @@ const HomePage = () => {
         <BotToTop />
         <UniversityHeading />
 
-        <div className={styles.purposeUniCont}>
-          {AboutUni.map((item, index) => (
-            <div key={index} className={styles.innerPurposeUniCont}>
-              <img src={item.image} alt={item.title} />
-              <div className={styles.purposeCardCont}>
-                <span>{item.name}</span>
-              </div>
-            </div>
-          ))}
-        </div>
+        <UniversityCards />
 
         <FindOutHeading />
         <FindOutMore />

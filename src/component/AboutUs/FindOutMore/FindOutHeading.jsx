@@ -5,7 +5,7 @@ import styles from "../../../style/layout.module.css";
 const FindOutHeading = () => {
   return (
     <>
-      <div className={styles.findOutCont}>
+      <div className={styles.findOutCont} style={{ padding: "60px"}}>
         <img className={styles.findOutIcon} src={search} alt="" />
         <span className={styles.findOutHeading}>Find Out More About Us</span>
       </div>

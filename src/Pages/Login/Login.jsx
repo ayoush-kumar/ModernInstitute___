@@ -1,55 +1,57 @@
-import React, { useState } from "react";
-import styles from "../../style/Login.module.css";
-import { useNavigate } from "react-router-dom";
-import Header from "../../component/Layouts/Header";
-import Footer from "../../component/Layouts/Footer";
-import axios from "axios";
+// import React, { useState } from "react";
+// import styles from "../../style/Login.module.css";
+// import { useNavigate } from "react-router-dom";
+// import Header from "../../component/Layouts/Header";
+// import Footer from "../../component/Layouts/Footer";
+// import axios from "axios";
+
+// import UserAuth from "../../component/userAuth/userAuth";
+import UserLogin from "../../component/userAuth/userLogin";
 
 const Login = () => {
-  const navigate = useNavigate();
-  const [UID, setUID] = useState("");
-  const [password, setPassword] = useState("");
+  // const navigate = useNavigate();
+  // const [UID, setUID] = useState("");
+  // const [password, setPassword] = useState("");
 
-  const handleAdminLogin = () => {
-    navigate("/admin-Login");
-  };
+  // const handleAdminLogin = () => {
+  //   navigate("/admin-Login");
+  // };
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
+  // const handleSubmit = async (e) => {
+  //   e.preventDefault();
 
-    try {
-      const response = await axios.post(
-        "https://university-project-paresh.onrender.com/University/Student/signIn",
-        { UID, password }
-      );
-      // console.log("res", response.data);
-      // console.log("res", response.data.Teacher);
-      if (response.data.loggedInFrom === "Student") {
-        localStorage.setItem("studentToken", response.data.accessToken);
-        localStorage.setItem("studentId", response.data.StudentId);
-        // localStorage.setItem("studentName", response.data.Student.Name);
-        alert(response.data.message);
-        navigate("/student-dashboard/profile");
-      } else if (response.data.loggedInFrom === "Teacher") {
-        localStorage.setItem("teacherToken", response.data.accessToken);
-        localStorage.setItem("teacherId", response.data.Teacher._id);
-        localStorage.setItem("teacherName", response.data.Teacher.Name);
-        alert(response.data.message);
-        navigate("/teacher-dashboard/profile");
-      } else {
-        console.log(response.data);
-        alert("Please, correct the UID");
-      }
-    } catch (error) {
-      // Handle error
-      console.error("Error:", error);
-    }
-  };
+  //   try {
+  //     const response = await axios.post(
+  //       "https://university-project-paresh.onrender.com/University/Student/signIn",
+  //       { UID, password }
+  //     );
+  //     // console.log("res", response.data);
+  //     // console.log("res", response.data.Teacher);
+  //     if (response.data.loggedInFrom === "Student") {
+  //       localStorage.setItem("studentToken", response.data.accessToken);
+  //       localStorage.setItem("studentId", response.data.StudentId);
+  //       // localStorage.setItem("studentName", response.data.Student.Name);
+  //       alert(response.data.message);
+  //       navigate("/student-dashboard/profile");
+  //     } else if (response.data.loggedInFrom === "Teacher") {
+  //       localStorage.setItem("teacherToken", response.data.accessToken);
+  //       localStorage.setItem("teacherId", response.data.Teacher._id);
+  //       localStorage.setItem("teacherName", response.data.Teacher.Name);
+  //       alert(response.data.message);
+  //       navigate("/teacher-dashboard/profile");
+  //     } else {
+  //       console.log(response.data);
+  //       alert("Please, correct the UID");
+  //     }
+  //   } catch (error) {
+  //     // Handle error
+  //     console.error("Error:", error);
+  //   }
+  // };
 
   return (
     <>
-      <Header />
-      <div className={styles.login}>
+      {/* <div className={styles.login}>
         <div className={styles.card}>
           <div className={styles.card2}>
             <form className={styles.form} onSubmit={handleSubmit}>
@@ -88,8 +90,10 @@ const Login = () => {
             </form>
           </div>
         </div>
-      </div>
-      <Footer />
+      </div> */}
+
+
+      <UserLogin/>
     </>
   );
 };

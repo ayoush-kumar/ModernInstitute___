@@ -74,6 +74,10 @@ import CodeOfConduct from "../component/CodeOfConduct/CodeOfConduct.jsx"
 import CodeOfEthics from "../component/CodeOfEthics/CodeOfEthics.jsx"
 import GBMembers from "../component/GBMembers/GBMembers.jsx"
 
+import UserAuth from "../component/userAuth/userAuth.jsx"
+import UserLogin from "../component/userAuth/userLogin.jsx"
+import UserSignup from "../component/userAuth/userSignup.jsx"
+
 
 
 
@@ -113,6 +117,13 @@ const AllRoutes = () => {
         <Route path="/CodeOfEthics" element={<CodeOfEthics/>}/>
         <Route path="/GBMembers" element={<GBMembers/>}/>
         <Route path="/applyonline" element={<ApplyOnline/>}/>
+
+        {/* Auth */}
+        <Route path="/userAuth" element={<UserAuth/>}/>
+        <Route path="/userLogin" element={<UserLogin/>}/>
+        <Route path="/userSignup" element={<UserSignup/>}/>
+        
+
         <Route
           path="/admin-dashboard"
           element={

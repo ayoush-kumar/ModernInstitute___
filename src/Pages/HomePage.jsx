@@ -7,8 +7,9 @@ import UniversityHeading from "../component/Home/University/UniversityHeading";
 import FindOutHeading from "../component/AboutUs/FindOutMore/FindOutHeading";
 import FindOutMore from "../component/AboutUs/FindOutMore/FindOutMore";
 import UniversityCards from "../component/AboutUs/FindOutMore/UniversityCards";
+import HomeSlider from "../component/Home/homeSlider/homeSlider.jsx";
 // import FindOutSlider from "../component/AboutUs/FindOutMore/FindOutSlider.jsx";
-import rectangle from "../assets/images/Rectangle1326.png";
+// import rectangle from "../assets/images/Rectangle1326.png";
 import stylesmodule from "../style/layout.module.css";
 
 
@@ -27,7 +28,8 @@ const HomePage = () => {
               <Link to="/AdmissionAndFee">ADMISSION & FEE</Link>
                 </td>
               <td rowSpan={8}>
-                <img src={rectangle} alt="noimage" />
+                <HomeSlider/>
+                {/* <img src={rectangle} alt="noimage" /> */}
               </td>
               <td className="hover-effect">
 

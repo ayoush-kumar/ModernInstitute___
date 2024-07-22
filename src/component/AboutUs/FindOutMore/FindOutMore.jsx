@@ -67,16 +67,7 @@ const CardSlider = () => {
        title: "Modern Institute Of Paramedical",
       info: "Modern Institute Of Nursing Offers 3 courses for 2023-2024 and 2024-2025",
       image: img3 
-    },
-    { title: "Modern Institute Of Nursing",
-      info: "Modern Institute Of Nursing Offers 3 courses for 2023-2024 and 2024-2025",
-      image: img1 },
-    { title: "Modern Institute Of Pharmacy",
-      info: "Modern Institute Of Pharmacy Offers 2 courses for 2023-2024 and 2024-2025", 
-      image: img2 },
-    { title: "Modern Institute Of Paramedical",
-      info: "Modern Institute Of Paramedical Sciences Offers 12 courses for 2023-2024 and 2024-2025", 
-      image: img3 },
+    }
   ];
 
   return (

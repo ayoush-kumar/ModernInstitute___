@@ -48,7 +48,7 @@ const UniversityCards = () => {
       image: img1
     },
     { 
-      title: "Camous",
+      title: "Campus",
       image: img2
     },
     {

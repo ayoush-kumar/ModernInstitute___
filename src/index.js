@@ -5,6 +5,9 @@ import { BrowserRouter } from 'react-router-dom';
 import './index.css';
 import  CollegeContext from './collegeContext';
 
+
+import 'react-toastify/dist/ReactToastify.css';
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>

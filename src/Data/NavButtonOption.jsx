@@ -16,8 +16,8 @@ export const NavButtonOption = [
     link: "/faculties"
   },
   {
-    title: "Courses"
-    // link: "/courses"
+    title: "Courses",
+    link: "/listofcourses"
   },
   {
     title: "Gallery",

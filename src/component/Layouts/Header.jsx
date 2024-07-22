@@ -65,9 +65,10 @@ Health Dept, Govt of Bihar, Patna</p>
           <Link to="/applyonline">
             <button className={styles.stylesApplyOnline}>Apply Online</button>
           </Link>
-          <Link to="/login">
+          <Link to="/userLogin">
             <button className={styles.stylesApplyOnline}>Log In</button>
           </Link>
+
         </div>
       </div>
 
@@ -92,10 +93,11 @@ Health Dept, Govt of Bihar, Patna</p>
           bgcolor: "#d2cece",
         }}
       >
-        <ul className={styles.navigationOption}>
+        <ul className={styles.navigationOption} >
           {NavButtonOption.map((item, index) => (
-            <li key={index}>
+            <li key={index} >
               <NavLink
+                style={{   margin: " 0 px",color: 'white' ,padding: '20px', width: '40px' , height: '40px'}}
                 activeclassname={styles.aactive}
                 to={item.link}
                 onClick={() => scrollViewToContent(item.title)}
@@ -107,7 +109,7 @@ Health Dept, Govt of Bihar, Patna</p>
         </ul>
       </Box>
 
-      {courseActive && (
+      {/* {courseActive && (
         <div className={styles.courseDropDownCont}>
           <MenuItem onClick={() => scrollViewToContent("Nursing")}>
             <Link className={styles.courseLinkStyle} to="/listofcourses">
@@ -125,7 +127,7 @@ Health Dept, Govt of Bihar, Patna</p>
             </Link>
           </MenuItem>
         </div>
-      )}
+      )} */}
 
       <Menu
         id="basic-menu"

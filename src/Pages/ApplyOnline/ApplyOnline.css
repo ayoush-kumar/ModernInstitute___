@@ -49,3 +49,13 @@
   button:hover {
     background-color: #0056b3;
   }
+  
+  *:disabled {
+    background-color: dimgrey;
+    color: linen;
+    opacity: 1;
+  }
+  *:disabled:hover {
+    background-color: red;
+  }
+  

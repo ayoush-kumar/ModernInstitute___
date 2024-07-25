@@ -33,7 +33,7 @@ const handleSignup = async (e) => {
     return handleError('name, email and password are required')
   }
   try {
-    const url = 'http://localhost:8080/auth/userSignup'
+    const url = 'https://testapi-black-seven.vercel.app/auth/signup'
     const response = await fetch(url, {
       method: "POST",
       headers: {
